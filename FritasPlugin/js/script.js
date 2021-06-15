@@ -1,10 +1,13 @@
 $(function(){
     $.mobile.loading().hide();
 
+    // varP == varParam <---- para não causar conflito
     function barraFiltros(boxP, barraP, pointerP, barra_fillP, precoP, precoMaxP, precoAtualP=0){
         let isMove = false
         let valorAtual = precoAtualP
-        let valorMax = Number(precoMaxP)
+        let valorMax
+        if (typeof(precoMaxP) == 'string') valorMax = Number($(precoMaxP).text().toString().replace('R$ ', '').replace('.', '').replace(',', '.'))
+        else valorMax = precoMaxP
         let percent
         let barra = $(barraP)
         let pointer = $(pointerP)
@@ -80,7 +83,11 @@ $(function(){
         })
     }
 
-    barraFiltros('.box:nth-child(1)', '#barra', '#pointer', '#barra-fill', '#preco', 2000)
+    
+    //                                              MODO DE USO
+    //   ---> pode ser .box:first-child <---                                 ---> pode ser um número <---
+    barraFiltros('.box:nth-child(1)', '#barra', '#pointer', '#barra-fill', '#preco', '#preco-max')
+    
 
     function ajaxPost(url, box, before='<h2>Carregando...</h2>', error='<h2>Lamentamos mas ocorreu um erro  ;[</h2>'){
         $.ajax({
@@ -99,6 +106,9 @@ $(function(){
         })
     }
 
+    //               MODO DE USO
+    // ajaxPost('arquivo onde está o conteúdo', 'local onde vai ficar o conteúdo')
+    
     ajaxPost('content.html', '.boxContent')
     
     
