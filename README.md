@@ -3,8 +3,8 @@
 <img id="title" align="center" src="https://github.com/eriklutiel/jQuery-FritasPlugin/blob/main/prtscr_img01.png" alt="image printed of my project screen"/>
 
 # FritasPlugin v0.1.2
-# Um complemento para jQuery. 
-# Criado por mim [@erikfritas](https://www.instagram.com/erikfritas/)
+Um complemento para jQuery. 
+Criado por mim [@erikfritas](https://www.instagram.com/erikfritas/)
 
 ## 1° Função: Eventos de click
 #### Esta função pode ser usado tanto para os navegadores Mobile quanto aos Desktop, sem precisar alterar nada na função, podendo se manipular o evento de click do dedo no celular e o click do mouse no computador, com uma linha de código.
