@@ -1,8 +1,8 @@
-* [jQuery-FritasPlugin](#title)
+# [jQuery-FritasPlugin](#title)
 
-<img align="center" src="https://github.com/eriklutiel/jQuery-FritasPlugin/blob/main/prtscr_img01.png" alt="image printed of my project screen"/>
+<img id="title" align="center" src="https://github.com/eriklutiel/jQuery-FritasPlugin/blob/main/prtscr_img01.png" alt="image printed of my project screen"/>
 
-<h2 id="title">FritasPlugin v0.1.2, Complemento para jquery, Criado por mim [@erikfritas](https://www.instagram.com/erikfritas/)
+<h2>FritasPlugin v0.1.2, Complemento para jquery, Criado por mim [@erikfritas](https://www.instagram.com/erikfritas/)
 ================================================
 
 ## 1° Função: Eventos de click
