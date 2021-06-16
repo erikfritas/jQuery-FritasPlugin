@@ -1,5 +1,9 @@
 $(()=>{
+    // Necessário para o jQuery Mobile funcionar sem a notificação de loading...
     $.mobile.loading().hide();
+    
+    // TODO: code smell --> diminuir o tamanho da função
+    // TODO: code smell --> diminuir a quantidade de parâmetros, para facilitar o uso.
 
     const enableSelection=()=>{
         $('body').css('-webkit-user-select', 'auto')
@@ -21,10 +25,8 @@ $(()=>{
         $('body').css('overflow-y', 'hidden')
     }
 
-
-    // TODO: code smell --> diminuir o tamanho da função
-
     // varP == varParam <---- para não causar conflito
+    // =================================  Barra Para Filtrar Preços  ================================================
     const barraFiltros = (boxP, barraP, pointerP, barra_fillP, precoP, precoMaxP=precoP+'-max', valorAtual=0)=>{
         let isMove = false
         let valorMax
@@ -74,11 +76,13 @@ $(()=>{
             } 
         })
         
+        // Necessário para não causar o bug da barra acima de 100% quando redimensionamos a window
         $(window).on('resize', ()=> ctrlBar(0, barra_fill, valorAtual, preco, 0))
     }
 
+    
     //                                     MODO DE USO
-    //   ---> pode ser .box:first-child <---
+    //   ---> pode ser .box:first-child <---          
     barraFiltros('.box:nth-child(1)', '#barra', '#pointer', '#barra-fill', '#preco')
     
 
