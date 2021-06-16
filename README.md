@@ -1,4 +1,4 @@
-# jQuery-FritasPlugin  #0769AD
+# jQuery-FritasPlugin
 FritasPlugin v0.1.2, Complemento para jquery, Criado por mim [@erikfritas](https://www.instagram.com/erikfritas/)
 ================================================
 
