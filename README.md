@@ -1,5 +1,5 @@
-# jQuery-FritasPlugin
-<h2 style="color: red;">FritasPlugin</h2> v0.1.2, Complemento para jquery, Criado por mim [@erikfritas](https://www.instagram.com/erikfritas/)
+# jQuery-FritasPlugin  #0769AD
+<img src="https://img.shields.io/static/v1?label=Blog&message=FritasPlugin&color=#0769AD&style=for-the-badge&logo=jquery"/> v0.1.2, Complemento para jquery, Criado por mim [@erikfritas](https://www.instagram.com/erikfritas/)
 ================================================
 
 ## 1° Função: Eventos de click
