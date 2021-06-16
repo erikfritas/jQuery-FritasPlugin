@@ -1,5 +1,5 @@
 # jQuery-FritasPlugin
-Alt-FritasPlugin v0.1.2, Complemento para jquery, Criado por mim [@erikfritas](https://www.instagram.com/erikfritas/)
+### FritasPlugin v0.1.2, Complemento para jquery, Criado por mim [@erikfritas](https://www.instagram.com/erikfritas/)
 ======
 
 ## 1° Função: Eventos de click
